@@ -1,17 +1,18 @@
 body {
-    background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(231,170,229,1) 29%, rgba(117,107,201,1) 58%, rgba(166,185,227,1) 80%, rgba(148,187,233,1) 100%);
+ 
+    background-image: url('pic.jpeg');
 }
 
 #input-text {
-padding: 1rem;
-margin-bottom: 1rem;
-width: 100%;
-border: none;
-border-radius: 5px;
-box-shadow: 0px 0px 20px rgba(249, 0, 0, 0.809);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(249, 0, 0, 0.809);
 }
-#submit-button{ 
+
+#submit-button {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     background-color: rgb(255, 0, 208);
@@ -22,14 +23,38 @@ box-shadow: 0px 0px 20px rgba(249, 0, 0, 0.809);
     box-shadow: 0px 0px 20px rgba(25, 3, 196, 0.779);
     transition: background-color 0.2s;
 }
+
 #submit-button:hover {
-    background-color:rgba(128, 0, 0, 0.735);
+    background-color: rgba(128, 0, 0, 0.735);
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:center ;
+    justify-content: center;
     height: 100vh;
+}
+
+/* Mobile Responsive Styles */
+
+@media screen and (max-width: 480px) {
+    body {
+        background: rgb(238, 174, 202);
+    }
     
+    #input-text {
+        padding: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    #submit-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .container {
+        height: auto;
+        padding: 1rem;
+    }
 }
