@@ -1,6 +1,8 @@
 body {
  
     background-image: url('pic.jpeg');
+    
+  background-repeat: no-repeat;
 }
 
 #input-text {
@@ -40,7 +42,8 @@ body {
 
 @media screen and (max-width: 480px) {
     body {
-        background: rgb(238, 174, 202);
+        background-image: url('pic.jpeg');
+        background-repeat: no-repeat;
     }
     
     #input-text {
